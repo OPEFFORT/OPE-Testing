@@ -12,6 +12,9 @@ Here is some of my current thinking
 
 ### `ope new container <name>`
 
+### `ope new course <name>`
+
+
 ## Book Commands
 
 ### `ope new part <name>`
