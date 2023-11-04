@@ -475,47 +475,6 @@ function pub
 function new_course
 #DESCRIPTION: Creates a new ope project seeded with 3 books (textbook, lecture notes, and labmanual) and one container 
 {
-    local project_name=$1
-    local repo_url=$2
-    
-    # Logging information
-    local func_name=${FUNCNAME[0]}
-    local func_args=$@
-    fc_header_logging "$func_name $func_args"
-
-    if [[ -z $project_name || $project_name == '-h' ]]; then
-        echo "Usage:  ${0##*/} ${func_name} <project name> [repo url]"
-        echo "   Create a new ope project with a standard set of books and a container."
-        return -1
-    fi
-
-    # Create a new project
-    new_project "$project_name" "$repo_url"
-    if [[ $? -ne 0 ]]; then
-        echo -e "$HEADER${Red}ERROR: Failed to create project $project_name${Color_Off}"
-        return -1
-    fi
-
-    # Navigate to the project directory
-    cd "$project_name"
-
-    # Create standard set of books
-    for book in textbook lecture_notes lab_manual; do
-        new_book "$book"
-        if [[ $? -ne 0 ]]; then
-            echo -e "$HEADER${Red}ERROR: Failed to create book $book${Color_Off}"
-            return -1
-        fi
-    done
-
-    # Create a standard container
-    new_container "standard_container"
-    if [[ $? -ne 0 ]]; then
-        echo -e "$HEADER${Red}ERROR: Failed to create container standard_container${Color_Off}"
-        return -1
-    fi
-
-    echo -e "$HEADER${Green}New course $project_name created successfully with standard books and container.${Color_Off}"
     return 0
 }
 
