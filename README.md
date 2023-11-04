@@ -1,6 +1,6 @@
 # OPE Tool
 
-This tool is designed to facilitate the management of projects within the Open Publishing Environment (OPE). It includes a variety of functions for handling repositories, books, containers, and course creation.
+This tool is designed to facilitate the management of projects within the Open Education Project (OPE). It includes a variety of functions for handling repositories, books, containers, and course creation.
 
 ## Installation
 
@@ -64,13 +64,7 @@ Each function in the script is intended for specific tasks. Below are the usages
 
 ### Logging and Configuration
 
-- The script includes logging functionality. Check `/tmp/ope.<process_id>.log` for logs.
 - Color configuration is included for better readability of output.
-
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
 
