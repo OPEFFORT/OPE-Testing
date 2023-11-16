@@ -67,5 +67,5 @@ Each function in the script is intended for specific tasks. Below are the usages
 - Color configuration is included for better readability of output.
 
 ---
-For more details: please go to https://riya-deokar.github.io/Documentation/firstBook/dummy_part/chapter.html [https://riya-deokar.github.io/Documentation/firstBook/dummy_part/chapter.html]
+For more details: please go to https://riya-deokar.github.io/Documentation/firstBook/dummy_part/chapter.html
 
