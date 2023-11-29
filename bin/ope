@@ -515,6 +515,12 @@ function pub
     echo -e "$HEADER${Green}${current_branch} has been successfully published ${Color_Off}"
 }
 
+function test
+#DESCRIPTION: run .ipynb tests to verify environment is properly set up
+{   
+    ipython $(git $SHOW_TOP_LEVEL)/tests/All-tests.ipynb
+}
+
 function new_course
 #DESCRIPTION: Creates a new ope project seeded with 3 books (textbook, lecture notes, and labmanual) and one container 
 {
