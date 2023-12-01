@@ -1,6 +1,6 @@
 # OPE Tool
 
-This tool is designed to facilitate the management of projects within the Open Education Project (OPE). It includes a variety of functions for handling repositories, books, containers, and course creation.
+This tool is designed to facilitate the management of projects within the Open Publishing Environment (OPE). It includes a variety of functions for handling repositories, books, containers, and course creation.
 
 ## Installation
 
@@ -64,8 +64,25 @@ Each function in the script is intended for specific tasks. Below are the usages
 
 ### Logging and Configuration
 
+- The script includes logging functionality. Check `/tmp/ope.<process_id>.log` for logs.
 - Color configuration is included for better readability of output.
 
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
 ---
-For detailed instructions: please go to https://riya-deokar.github.io/Documentation/firstBook/dummy_part/chapter.html
+
+## OPE USER GUIDE
+
+A collection of OPE books and associated container images are organized into a project.
+
+## Creating a new OPE project
+
+We will use the project `ucsls` as a running example.
+
+1. We recommend that you create a new email address that will act as the central admin address for your project.  Eg. ucsls.organization@gmail.com.  You can then use this as the admin and identity for all online resources of your project.
+
+2. Assuming that you are using github or gitlab we recommend you create a new organization for your project.  If you will be publishing containers as part of your project we also recommend that you create an docker image registery organization.
 
